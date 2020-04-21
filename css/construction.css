@@ -1,0 +1,30 @@
+body{
+  background-color: orange;
+}
+
+.image{
+
+}
+
+@media only screen and (max-width: 900px) {
+  .image img{
+    width: 400px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+
+@media only screen and (max-width: 414px) {
+  .image img{
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

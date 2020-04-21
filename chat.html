@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" dir="ltr">
+
+<head>
+  <link id="pagestyleTheme" rel="stylesheet" href="css/chatstyle.css" type="text/css">
+
+
+  <meta charset="utf-8">
+
+  <title>Bamazon - Live Chat</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./FavIcon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./FavIcon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./FavIcon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./FavIcon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+
+<body>
+
+  <div class="wrapper">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <ul>
+          <li><a href="underConstruction.html">Homeware</a></li>
+          <li><a href="underConstruction.html">Technology</a></li>
+          <li><a href="underConstruction.html">Toys</a></li>
+          <li><a href="underConstruction.html">Clothing</a></li>
+          <li><a href="underConstruction.html">Garden</a></li>
+          <li><a href="underConstruction.html">Books</a></li>
+
+        </ul>
+
+      </div>
+    </div>
+
+
+    <div class="head">
+      <div class="logo">
+        <a href="index.html">
+          <picture>
+            <source media="(max-width: 414px)" srcset="media/images/sqlogo.png">
+            <img src="media/images/bamazonLogo.png" alt="Bamazon Logo" style="width:auto;" </img>
+
+          </picture>
+        </a>
+      </div>
+
+      <div class="searchbar">
+        <input type="text" placeholder="gifts for brother...">
+
+
+      </div>
+
+      <div class="slogan">
+        <h1>Delivering Simplicity</h1>
+
+      </div>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li><a href="underConstruction.html">Homeware</a></li>
+        <li><a href="underConstruction.html">Technology</a></li>
+        <li><a href="underConstruction.html">Toys</a></li>
+        <li><a href="underConstruction.html">Clothing</a></li>
+        <li><a href="underConstruction.html">Garden</a></li>
+        <li><a href="underConstruction.html">Books</a></li>
+      </ul>
+    </div>
+    <div class="alert">
+
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      For a limited time only! Free Delivery on all products! Happy workers day!.
+    </div>
+
+  </div>
+
+  <div class="gamewrapper">
+
+    <div class="gamecontainer">
+      <div class="gamechathead">
+        <h3>Customer Support</h3>
+      </div>
+
+
+      <img class="chatimage" src="media/images/customer-service.png" alt="Avatar"> </img>
+      <p><span id="datetime"></span></p>
+      <h4>Andrew:</h4>
+
+      <div class="textbubble">
+        <div id="text">Text</div>
+      </div>
+
+      <div class="playeroptions">
+        <p>Please respond to us below</p>
+
+      </div>
+      <h4 id="insert"></h4>
+      <div id="option-buttons" class="game-btn-grid">
+        <button class="game-btn" id="btnChoice1">Option 1</button>
+        <button class="game-btn" id="btnChoice2">Option 2</button>
+        <button class="game-btn" id="btnChoice3">Option 3</button>
+        <button class="game-btn" id="btnChoice4">Option 4</button>
+
+      </div>
+    </div>
+
+    <!-- <div class="stats">
+      <h4>Time Remaining: </h4>
+      <p id="userTimeRemaining">0</p>
+      <h4>Score:</h4>
+      <p id="userScore">0</p>
+      <h4>Attempts: </h4>
+      <p id="userAttempts">0</p> -->
+    <div class="utility">
+      <h4>Media Recieved from support: </h4>
+      <!-- Trigger the Modal for the image -->
+      <img id="diagram" src="media/images/diagram.png" alt="A diagram" style="width:100%;max-width:300px">
+    </div>
+
+    <div class="stats">
+      <h4 id="time">Timer:
+        <span id="timerVar"></span>
+      </h4>
+      <h4 id="score">Score:
+        <span id="userScore"></span>
+      </h4>
+      <h4 id="attempts">Attempts:
+        <span id="attemptsValue"></span>
+      </h4>
+
+    </div>
+
+
+
+    <div class="extras">
+      <h4>Settings</h4>
+
+      <button id="buttoncontrol" class="audiobutton" onclick="play()" type="audiobutton">Play Game Music</button>
+      <button id="buttoncontrol" class="audiobutton" onclick="pause()" type="audiobutton">Pause Game Music</button>
+      <button onclick="changeTheme('css/chatstyleDark.css')" id="darkThemeButton">Dark Theme</button>
+      <button onclick="changeTheme('css/chatstyle.css')" id="originalThemeButton">Original Theme</button>
+
+      <h4>Help</h4>
+      <button id="howToPlayBtn">How to Play</button>
+      <button id="videoButton">Walkthrough Video</button>
+
+    </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="socialmedia">
+      <a href="https://www.facebook.com/Bamazon-the-Game-104897794526220/" target="_blank"> <img id="sociallogo"
+          src="media/images/facebookLogo.png" alt="faceBook Soical Media"></a>
+      <a href="https://twitter.com/BamazonGme" target="_blank"> <img id="sociallogo" src="media/images/twitterLogo.png"
+          alt="twitter Soical Media"></a>
+
+    </div>
+    <p>Developed By Scathlry LTD</p>
+
+  </div>
+  </div>
+
+  <!-- The Modal for instructions -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content for instructions -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Game Instructions</h2>
+      </div>
+      <div class="modal-body">
+        <p>You have been chosen to help out Andrew who desperatly needs your help! He works for
+          Bamazon the global ecomerce store who work ethics are the lowest of the low!
+        </p>
+        <p>Andrew has chosen you at random to help him escape the Bamazon warehouse! You can try to run, sneak or fight
+          your way out, however
+          will it be the correct decision?<br> <br> </p>
+        <p><br>You must choose your repsonse using the buttons below his messages! The game has different pathways...
+          some shorter then others...
+          some making Andrew be caught by Bamazon!
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <!--End of Modal Popup for instructions-->
+
+  <!-- The Modal for image -->
+  <div id="myModalImage" class="modalImage">
+
+    <!-- The Close Button -->
+    <span class="closeImage">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content-Image" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="captionImage"></div>
+  </div>
+
+  <!--End of Modal Popup for image-->
+
+  <script type="text/javascript" defer src="javascript/game.js"></script>
+  <script type="text/javascript" defer src="javascript/posttime.js"></script>
+  <script type="text/javascript" defer src="javascript/musicplay.js"></script>
+  <script type="text/javascript" defer src="javascript/alertGame.js"></script>
+  <script type="text/javascript" defer src="javascript/switchTheme.js"></script>
+  <script type="text/javascript" defer src="javascript/timer.js"></script>
+  <!--<script type="text/javascript" defer src="javascript/store.js"></script> -->
+
+  <audio id="myAudio">
+    <source src="media/sounds/gamemusic.mp3" type="audio/mp3">
+  
+
+
+</body>
+
+</html>

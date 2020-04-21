@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Head HTML Section -->
+
+<head>
+  <link rel="stylesheet" href="../css/ProductPages/productPage6.css" type="text/css">
+  <script type="text/javascript" src="../javascript/javascript.js"></script>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bamazon</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../FavIcon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../FavIcon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../FavIcon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../FavIcon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+</head>
+<!-- END OF HEAD -->
+
+
+<!-- START of BODY -->
+
+<body>
+
+  <!-- Wrapper is a div that holds all of the other divs within
+   it acting as the parent container -->
+
+  <div class="wrapper">
+
+    <!-- dropdown div is used to create the dropdown menu using MEDIA
+queries for devices below 414px wide -->
+
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <ul>
+          <li><a href="underConstruction.html">Homeware</a></li>
+          <li><a href="underConstruction.html">Technology</a></li>
+          <li><a href="underConstruction.html">Toys</a></li>
+          <li><a href="underConstruction.html">Clothing</a></li>
+          <li><a href="underConstruction.html">Garden</a></li>
+          <li><a href="underConstruction.html">Books</a></li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <!-- div head is used to start all of the other divs located in the
+header of the website such as logos etc -->
+
+    <div class="head">
+
+
+
+      <div class="logo">
+        <a href="../index.html">
+          <picture>
+            <source media="(max-width: 414px)" srcset="../media/images/sqlogo.png">
+            <img src="../media/images/bamazonLogo.png" alt="Bamazon Logo" style="width:auto;" </img>
+
+          </picture>
+        </a>
+
+
+      </div>
+
+
+
+      <div class="searchbar">
+        <input type="text" placeholder="gifts for brother...">
+
+      </div>
+
+      <div class="slogan">
+        <h1>Deliverying Simplicity</h1>
+
+      </div>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li><a href="underConstruction.html">Homeware</a></li>
+        <li><a href="underConstruction.html">Technology</a></li>
+        <li><a href="underConstruction.html">Toys</a></li>
+        <li><a href="underConstruction.html">Clothing</a></li>
+        <li><a href="underConstruction.html">Garden</a></li>
+        <li><a href="underConstruction.html">Books</a></li>
+      </ul>
+    </div>
+
+
+    <!-- MAIN is used as the container to store the content of the page -->
+    <div class="main">
+
+
+      <div class="left">
+
+        <div class="productImage">
+          <h1>Electric Shaver</h1>
+          <h2> &nbsp; Price: <font color="red"> £54.99 </font>
+          </h2>
+          <img src="../media/images/shaver.png" alt="shaver" </img>
+
+        </div>
+        <div class="productInfo">
+          <h1>Product Information</h1>
+          <h2> &nbsp; <img src="../media/images/starRating.png" alt="StarRating" height="40px" width="150px" </img></h2>
+          <p>The Shaver Series 3000 gives you an easy and convenient shave with more comfort at an affordable price.
+            4-direction Flex Heads, combined with a ComfortCut Blade System, guarantee a smooth result.Get a comfortable
+            shave,
+            wet or dry. Our ComfortCut Blade System with rounded profile heads glide smoothly across your skin while
+            protecting it from nicks and cuts.
+            Flex heads with 4 independent movements adjust to every curve of your face, giving you an easy shave even on
+            the neck and jawline.
+          </p>
+
+          <ul>
+            <li>ComfortCut Blade System.</li>
+            <li>4-direction Flex Heads.</li>
+            <li>4-direction Flex Heads.</li>
+            <li>blue.</li>
+            <li>Series 3000.</li>
+          </ul>
+
+        </div>
+
+      </div>
+      <div class="right">
+        <h1>Order Form</h1>
+        <div class="form">
+          <form name="playerDetails" action="../chat.html" onsubmit="return validate();" method="post">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstName" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastName" placeholder="Your last name.." required>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+              <option value="australia">UK</option>
+              <option value="canada">Ireland</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="Address">Address</label>
+            <select id="Address" name="Address" required>
+              <option value="99 church road">99 church road</option>
+              <option value="88 church road">88 church road</option>
+              <option value="77 church road">77 church road</option>
+            </select>
+
+            <label for="cardName">Name on Card</label>
+            <input type="text" id="cardname" name="Name on Card" placeholder="Name on Card ..." required>
+
+            <label for="cardNo">Card Number</label>
+            <input type="text" id="cardnumber" name="Card Number" placeholder="Card Number ..." required
+              value='4444555566667777'>
+
+            <label for="CSV">CSV</label>
+            <input type="text" id="CSV" name="CSV" placeholder=" 3 Digit CSV Number ..." required>
+            <input type="submit" value="Buy Now">
+          </form>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- footer class for credits -->
+    <div class="footer">
+      <p>Developed By Scathlry LTD</p>
+    </div>
+  </div>
+
+
+
+  <!-- end of the BODY-->
+</body>
+
+</html>

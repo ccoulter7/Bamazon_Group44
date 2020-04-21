@@ -1,0 +1,418 @@
+/*--- controls the bodys style---*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* --- Wrapper ---*/
+.wrapper{
+  background-color: #82678a;
+
+}
+
+/*---head head head- including logo, searchbar slogan and dropdown--- */
+
+.head{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  background-color: lightgrey; /*purple*/
+
+}
+
+.dropdown{
+  display: none;
+}
+
+/* ---logo div and img tag--- */
+.logo{
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.logo img{
+  width: 80px;
+  height: 40px;
+  background-color: lightgrey;
+}
+
+/*--- searchbar---*/
+.searchbar{
+  margin-top: 1.5%;
+  margin-bottom: 0.5%;
+}
+
+.searchbar input{
+
+  font-size: 14px;
+  background-color: white;
+  border-color: white;
+  border-radius: 10px;
+  border-style: ridge;
+  padding: 4px;
+
+}
+
+
+/*--- slogan ---*/
+
+.slogan{
+  color: #bfb078;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+/* ---navigation bar styling---*/
+.nav{
+  height: 40px;
+  background-color: darkgrey;
+  text-align: center;
+  padding-top: 0.5%;
+}
+
+.nav ul{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nav li{
+  text-decoration-style: none;
+  display:inline-block;
+}
+
+.nav li a{
+  color: white;
+  font-size: 22px;
+  text-decoration-line: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav li a:hover{
+  border: 1px solid #82678a;
+  border-radius: 5px;
+  background-color: #bfb078;
+}
+
+/*--- Main section---*/
+
+.main{
+  border-radius: 50px;
+  background-color: #82678a;
+
+
+}
+
+.left{
+  background-color: #82678a;
+  border: 1px solid black;
+  background-color: white;
+  position: relative;
+  float: left;
+  width: 50%;
+  height: auto;
+
+}
+
+.left h1{
+  padding: 10px;
+
+
+}
+
+.left p{
+  padding: 15px;
+}
+
+.left ul {
+  padding: 35px;
+}
+
+.productInfo{
+  width: 100%;
+
+}
+
+.productImage{
+  width: 100%;
+}
+
+.productImage img{
+  position: relative;
+  left: 20%;
+  max-width:  45%;
+  max-height: 45%;
+  object-fit: contain;
+
+
+}
+
+.right{
+  border: 1px solid black;
+  background-color: white;
+  position: relative;
+  float: left;
+  width: 50%;
+
+}
+
+.right h1{
+  padding: 10px;
+  width: 100%;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form{
+  padding: 30px;
+
+}
+
+
+
+
+/* --- footer ---*/
+
+.footer{
+  clear: left;
+  width: 100%;
+  padding: 1%;
+  background-color: lightgrey;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+
+
+/* ---TABLET SCREEN SIZED MEDIA QUERY---*/
+
+@media only screen and (max-width: 768px) {
+  .product{
+    border: 1px solid blue;
+    min-width: 49%;
+    height: 250px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.nav li a{
+  color: white;
+  font-size: 16px;
+  text-decoration-line: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+  /* Product image styling */
+  .product img{
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    max-height: 150px;
+    object-fit: contain;
+
+}
+}
+
+
+/* ---PHONE SCREEN SIZED MEDIA QUERY---*/
+@media only screen and (max-width: 414px) {
+
+
+.nav {
+  display: none;
+}
+
+.head{
+  margin: 0;
+  width: 70%;
+  height: 50px;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around ;
+  align-items: center;
+  background-color: lightgrey;
+
+}
+
+/*--- dropdown menu--- */
+.dropdown{
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  height: 50px;
+  float: left;
+}
+
+.dropbtn {
+  width: 100%;
+  height: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #pink;
+}
+
+
+/* ---logo div and img tag--- */
+.logo{
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.logo img{
+  height:51px;
+  width:50px;
+  background-color: lightgrey;
+
+}
+
+/*--- searchbar---*/
+.searchbar{
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+}
+
+/*--- slogan ---*/
+
+.slogan{
+  display: none;
+
+
+}
+
+/*--- Main --- */
+
+.main{
+  clear: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.product{
+  border: 1px solid blue;
+  width: 100%;
+  height: 250px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/* Product image styling */
+.product img{
+display: block;
+margin: auto;
+max-width: 75%;
+max-height: 175px;
+object-fit: contain;
+}
+
+/* --- Product Container ---
+
+Holds free shipping and buy button */
+
+.productContainer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  margin: 1%;
+
+
+}
+
+/* product div button */
+
+.productContainer button{
+  position: relative;
+  display: block;
+  float: right;
+  bottom: 4%;
+  right: 7%;
+  color: white;
+  background-color: green;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.productContainer p{
+  position: relative;
+  display: block;
+  float: left;
+  bottom: 4%;
+  left: 3%;
+  padding: 8px;
+}
+
+
+}

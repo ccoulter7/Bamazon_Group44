@@ -1,0 +1,697 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+p {
+  color: white;
+}
+
+#text {
+color: white;
+}
+
+h3,h4 {
+  color: white;
+}
+.gamewrapper {
+  padding: 0;
+  margin: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(36, 36, 36);
+}
+
+.gamecontainer {
+  width: 50vw;
+  background-color: rgb(75, 75, 75);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+  float: left;
+  margin-left: 25%;
+  margin-top: 5%;
+  position: relative;
+}
+
+.extras {
+  width: 250px;
+  background-color:rgb(75, 75, 75);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+  position: relative;
+  float: right;
+  margin-right: 20%;
+  margin-top: 50px;
+  margin-bottom:50px;
+  }
+  
+.stats {
+  width: 200px;
+  background-color:rgb(75, 75, 75);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+  position: relative;
+  float: left;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.utility {
+  width: 180px;
+  background-color:rgb(75, 75, 75);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+  position: relative;
+  float: left;
+  margin-top: 5%;
+  margin-left: 5%;
+  }
+
+.game-btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.playeroptions {
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+  margin-top: 30px;
+}
+
+.gamechathead {
+  border-bottom: black 2px solid;
+}
+
+.chatimage {
+  border-radius: 100%;
+}
+
+.chatheadimage {
+  border-radius: 100%;
+}
+.gamebtn:hover {
+  border-color: black;
+}
+
+button{
+  background-color: rgb(255, 102, 0);
+  border: 1px solid rgb(255, 102, 0);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(224, 93, 5); 
+  color: white;
+}
+
+#buttoncontrol {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #232f3e;
+  border-color: #232f3e;
+  color: white;
+}
+
+#buttoncontrol:hover{
+  background-color: rgb(15, 50, 206); 
+  color: white;
+}
+
+
+#howToPlayBtn{
+  background-color: #232f3e;
+  border-color: #232f3e;
+  color: white;
+  display: block;
+  padding: 10px;
+  margin: 5px;
+}
+
+#howToPlayBtn:hover{
+  background-color: rgb(15, 50, 206); 
+  color: white;
+}
+
+
+#darkThemeButton{
+  background-color: #232f3e;
+  border-color: #232f3e;
+  color: white;
+  display: block;
+  padding: 10px;
+  margin: 5px;
+}
+
+#darkThemeButton:hover{
+  background-color: rgb(15, 50, 206); 
+  color: white;
+}
+
+#originalThemeButton{
+  background-color: #232f3e;
+  border-color: #232f3e;
+  color: white;
+  display: block;
+  padding: 10px;
+  margin: 5px;
+}
+
+
+#originalThemeButton:hover{
+  background-color: rgb(15, 50, 206); 
+  color: white;
+}
+
+#videoButton{
+  background-color: #232f3e;
+  border-color: #232f3e;
+  color: white;
+  display: block;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* --- Wrapper ---*/
+.wrapper{
+  background-color: lightgrey;
+
+}
+
+/*---head head head- including logo, searchbar slogan and dropdown--- */
+
+.head{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  background-color: #232f3e; /*purple*/
+
+}
+
+.dropdown{
+  display: none;
+}
+
+/* ---logo div and img tag--- */
+.logo{
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.logo img{
+  width: 80px;
+  height: 40px;
+  background-color: #232f3e;
+}
+
+/*--- searchbar---*/
+.searchbar{
+  margin-top: 1.5%;
+  margin-bottom: 0.5%;
+  min-width: 70%;
+}
+
+.searchbar input{
+
+  font-size: 14px;
+  background-color: white;
+  border-color: white;
+  border-radius: 10px;
+  border-style: ridge;
+  padding: 4px;
+  min-width: 105%;
+
+}
+
+
+/*--- slogan ---*/
+
+.slogan{
+  color: white;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  font-family: Arial;
+
+}
+
+/* ---navigation bar styling---*/
+.nav{
+  height: 40px;
+  background-color: #232f3e;
+  text-align: center;
+  padding-top: 0.5%;
+
+}
+
+.nav ul{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nav li{
+  text-decoration-style: none;
+  display:inline-block;
+
+}
+
+.nav li a{
+  color: white;
+  font-size: 22px;
+  text-decoration-line: none;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.nav li a:hover{
+  border: 1px solid #82678a;
+  border-radius: 5px;
+  background-color: #bfb078;
+}
+
+
+/* --- footer ---*/
+
+.footer{
+  padding: 1%;
+  background-color: rgb(85, 85, 85);
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Style all font awesome icons */
+#sociallogo {
+  margin-right: 20px;
+}
+
+/* Add a hover effect if you want */
+#sociallogo:hover {
+  opacity: 0.7;
+}
+
+
+
+/* --- CSS FOR the Modal and Alert Box ---*/
+/* --- CSS FOR the Modal and Alert Box ---*/
+/* --- CSS FOR the Modal and Alert Box ---*/
+/* --- CSS FOR the Modal and Alert Box ---*/
+
+/* The Modal background*/
+.modal {
+display: hidden; /* Hidden */
+position: fixed; /* Doesnt move */
+z-index: 1; /* Placed at top */
+left: 0;
+top: 0;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.9);
+overflow: hidden;
+width: 100%; 
+height: 100%; 
+}
+
+/* Modal Header */
+.modal-header {
+padding: 2px 17px;
+background-color: #232f3e;
+color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 40px 16px;
+
+}
+
+/* Modal Content */
+.modal-content {
+border: 1px solid #777;
+width: 60%;
+height: 40%;
+position: relative;
+background-color: #2b2b2b;
+margin: 15% auto;
+padding: 0;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+animation-name: animatetop;
+animation-duration: 0.5s;
+}
+
+/*Animation */
+@keyframes animatetop {
+from {top: -300px; opacity: 0}
+to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* The alert message box */
+.alert {
+padding: 20px;
+background-color: #f44336; /* Red */
+color: white;
+
+}
+
+/* The close button */
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;
+overflow: hidden;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+color: black;
+}
+
+/*end of alert*/
+/*end of alert*/
+/*end of alert*/
+/*end of alert*/
+
+/* --- CSS FOR the Image Modal ---*/
+/* --- CSS FOR the Image Modal ---*/
+/* --- CSS FOR the Image Modal ---*/
+/* --- CSS FOR the Image Modal ---*/
+
+/* Style the Image Used to Trigger the Modal */
+#diagram {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#diagram:hover {opacity: 0.8;}
+
+/* The Image Modal background */
+.modalImage {
+position: fixed; /* Doesnt move */
+z-index: 1; /* Sit at the top */
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+padding-top: 100px;
+overflow: auto;
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.9);
+overflow: hidden;
+display: none;
+}
+
+/* Modal Content of Image */
+.modal-content-Image {
+max-width: 700px;
+margin: auto;
+display: block;
+width: 40%;
+}
+
+/* Caption of Modal Image*/
+#captionImage {
+text-align: center;
+color: #ccc;
+padding: 5px 0;
+height: 150px;
+margin: auto;
+display: block;
+width: 40%;
+max-width: 680px;
+}
+
+/* Animation for image */
+.modal-content-Image, #captionImage {
+animation-duration: 0.7s;
+animation-name: zoom;
+}
+
+@keyframes zoom {
+from {transform:scale(0)}
+to {transform:scale(1)}
+}
+
+/* The Close Button */
+.closeImage {
+font-size: 40px;
+font-weight: bold;
+transition: 0.5s;
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+}
+
+.closeImage:hover,
+.closeImage:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+/* --- MEDIA QUERIES FOR WEBSITE RESIZING ---*/
+
+
+/* ---TABLET SCREEN SIZED MEDIA QUERY---*/
+
+@media only screen and (max-width: 768px) {
+ 
+
+.nav li a{
+  color: white;
+  font-size: 16px;
+  text-decoration-line: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+  /* Product image styling */
+  .product img{
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    max-height: 150px;
+    object-fit: contain;
+
+}
+.gamewrapper {
+  width: 100%;
+
+}
+
+.gamecontainer {
+  width: 90%;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.stats {
+  width: 80%;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 75px;
+}
+
+.extras {
+  width: 80%;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 75px;
+  float: left;
+}
+
+.utility {
+  width: 30%;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 270px;
+}
+
+
+.modal-content-Image {
+  width: 70%;
+}
+
+
+
+}
+
+/* ---PHONE SCREEN SIZED MEDIA QUERY---*/
+@media only screen and (max-width: 414px) {
+
+
+.nav {
+  display: none;
+}
+
+.head{
+  margin: 0;
+  width: 70%;
+  height: 50px;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around ;
+  align-items: center;
+  background-color: lightgrey;
+
+}
+
+/*--- dropdown menu--- */
+.dropdown{
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  height: 50px;
+  float: left;
+}
+
+.dropbtn {
+  width: 100%;
+  height: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: pink;
+}
+
+
+/* ---logo div and img tag--- */
+.logo{
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.logo img{
+  height:51px;
+  width:50px;
+  background-color: lightgrey;
+
+}
+
+/*--- searchbar---*/
+.searchbar{
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+}
+
+/*--- slogan ---*/
+
+.slogan{
+  display: none;
+
+
+}
+.gamewrapper {
+  width: 100%;
+
+}
+
+.gamecontainer {
+  width: 90%;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.stats {
+  width: 80%;
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.extras {
+  width: 80%;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+.utility {
+    width: 80%;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 30px;
+  
+}
+
+.modal-content-Image {
+  width: 70%;
+}
+
+
+}
